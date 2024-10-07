@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #00aaff, #002a5c); /* Blu gradient */
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.header {
+    background: #00aaff; /* Blu più chiaro */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff; /* Bianco */
+    color: #333;
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sfumatura più intensa */
+}
+
+.container .title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #002a5c; /* Blu Napoli */
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.container .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 3px;
+    width: 40px;
+    background: linear-gradient(to right, #00aaff, #002a5c);
+}
+
+.content form .user-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+form .user-details .input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+form .input-box span.details {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #002a5c; /* Blu Napoli */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.button {
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(to right, #00aaff, #002a5c); /* Blu Napoli gradient */
+}
+
+.button:hover {
+    background: #00aaff; /* Blu più chiaro */
+}
+
+@media(max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    .content form .user-details {
+        grid-template-columns: 1fr;
+    }
+}

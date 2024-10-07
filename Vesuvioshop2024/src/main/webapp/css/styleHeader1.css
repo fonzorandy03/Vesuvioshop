@@ -1,0 +1,156 @@
+header {
+    margin: 0;
+    padding: 20px 0;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #0079bf, #ffffff);
+    z-index: 999;
+    height: 10vh;
+    border-bottom: 3px solid #0b2077;
+}
+
+.home,
+.cart,
+.account,
+.favs {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.home .a-header {
+    margin-top: 5px; /* Aggiungi un margine superiore per spostare la scritta in basso */
+}
+
+.left-nav ul,
+.right-nav ul {
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.right-nav ul li a,
+.left-nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    text-align: center;
+}
+
+header li a img {
+    width: 3.5vh; /* Aumenta la dimensione dell'immagine */
+    margin-bottom: 5px;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.logo {
+    transform: translateX(-95px);
+    transition: 1s;
+}
+
+.logo:hover {
+    transition: 1s;
+}
+
+@media screen and (max-width: 708px) {
+    .a-header,
+    .logo img {
+        display: none;
+    }
+
+    .right-nav li a img,
+    .left-nav li a img {
+        width: 5vh;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#searchbar {
+    width: 300px;
+    height: 40px;
+    padding: 10px 20px;
+    border-color: #00aaff;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+    cursor: text;
+    border-radius: 50px;
+    border: 2px solid #00AAFF;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.bx bx-search-alt-2 {
+	position: absolute;
+	margin-left: 330px;
+
+ }
+
+
+
+
+
+.risultati {
+    display: none;
+    width: 300px;
+    margin-top: 70px;
+    border: 1px solid #003366;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-178%);
+}
+
+.risultati div {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.risultati div:last-child {
+    border-bottom: none;
+}
+
+.risultati div:hover {
+    background-color: #e0f7ff;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+#pic {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+#name {
+    font-size: 14px;
+    color: #003366;
+    margin: 0;
+    font-weight: bold;
+}

@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top:105px;
+    margin-bottom: 105px;
+}
+
+h3, h6 {
+    color: #005ca9;
+}
+
+a {
+    text-decoration: none;
+    color: #005ca9;
+}
+
+a:hover {
+    color: #003f7a;
+}
+
+/* Section Styles */
+.sproduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col1, .col2 {
+    flex: 1;
+    margin: 20px;
+}
+
+.imgProduct {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3.nome {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+.fabutton {
+    background: none;
+    padding: 0;
+    border: none;
+}
+
+
+.fabutton {
+    background: none;
+    padding: 0;
+    border: none;
+}
+
+
+/* Button Styles */
+.buy-btn {
+    background-color: #005ca9; /* Napoli Calcio Blue */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #003f7a;
+    cursor: pointer;
+}
+
+/* Description Styles */
+.desc {
+    font-size: 1.3em;
+    margin-top: 30px;
+}
+
+p {
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sproduct {
+        padding: 20px;
+    }
+
+    .col1, .col2 {
+        flex: 100%;
+        margin: 10px 0;
+    }
+}
+

@@ -1,0 +1,136 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #f1f1f1;
+	font-family: Arial, sans-serif;
+}
+
+.wrapper {
+	padding: 40px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.heading-title {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.heading-title h1 {
+	font-size: 32px;
+	font-weight: bold;
+	color: #333;
+}
+
+.item-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 30px;
+}
+
+.item {
+	background: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+}
+
+.item:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item-img img {
+	width: 100%;
+	display: block;
+}
+
+.item-action {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.item-action a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #333;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: 10px;
+	transition: all 0.3s ease;
+}
+
+.item-action a:hover {
+	background: #27dc8a;
+	color: #fff;
+}
+
+.item-details {
+	padding: 15px;
+}
+
+.rating {
+	margin-bottom: 10px;
+}
+
+.rating li {
+	display: inline-block;
+	color: #fdbc3b;
+}
+
+.price {
+    font-size: 24px; /* Aumenta la dimensione del font per renderlo grande */
+    font-weight: bold;
+    color: #003399; /* Usa un colore blu scuro per richiamare i colori della SSC Napoli */
+    margin-bottom: 10px; /* Aumenta il margine inferiore per pi  spazio */
+    text-shadow: 1px 1px 2px #fff; /* Aggiungi un'ombra per rendere il testo pi  bello */
+    border-bottom: 2px solid #007FFF; /* Aggiungi una linea inferiore per evidenziare */
+}
+
+.name {
+    font-size: 20px; /* Aumenta la dimensione del font per renderlo grande */
+    color: #007FFF; /* Usa un colore blu chiaro per richiamare i colori della SSC Napoli */
+    margin-bottom: 15px; /* Aumenta il margine inferiore per pi  spazio */
+    text-shadow: 1px 1px 2px #fff; /* Aggiungi un'ombra per rendere il testo pi  bello */
+    font-family: 'Arial', sans-serif; /* Usa un font sans-serif per un aspetto moderno */
+}
+
+/* Stile generale per i link */
+a {
+  text-decoration: none; /* Rimuove la sottolineatura */
+  margin-right: 10px; /* Spazio tra i link */
+}
+
+/* Stile per il link di modifica */
+a.upd {
+  color: #f00; /* Colore del testo */
+}
+
+/* Stile per il link di eliminazione */
+a.del {
+  color: #f00; /* Colore del testo */
+}
+
+/* Stile per l'icona di modifica */
+a.upd .far.fa-edit {
+  color: #f00; /* Colore dell'icona */
+}
+
+/* Stile per l'icona di eliminazione */
+a.del .fas.fa-trash-alt {
+  color: #f00; /* Colore dell'icona */
+}
+
